@@ -96,8 +96,8 @@
                                 <li>Virtual Tour Telkom</li>
                                 <li>Nama Dosen</li>
                                 <li>NIP Dosen</li>
-                                <li>Nama Dosen Wali</li>
-                                <li>NIP Dosen Wali</li>
+                                <li>Kode Dosen</li>
+                                <li>Dosen Wali</li>
                                 <li>Ujian Susulan</li>
                                 <li>Alur Pengajuan Ujian Susulan</li>
                                 <li>Jadwal Kerja Praktek</li>
@@ -177,19 +177,19 @@
             }
             chatBox.innerHTML += `
 
-            
+
         <div class="row senderContainer">
             <div class="col-6"></div>
-            
+
             <div class="col-6 senderText">
                 <div>
                     <p class='chatSender'>You</p>
-                    
+
                     <p>${questionBox.value}</p>
                 </div>
-                
+
             </div>
-            
+
         </div>`;
             const response = await fetch('http://localhost:5000/chatbot', {
                 method: 'POST',
@@ -205,7 +205,7 @@
 
             chatBox.innerHTML += `
         <div class="row answerContainer">
-       
+
             <div class="col-6  answerText ms-4">
                 <div>
                     <p class='chatSender'>Bot LAA</p>
